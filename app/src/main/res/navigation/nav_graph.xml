@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/app"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.sixyears.onestory.ui.welcome.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_permission"
+            app:destination="@id/permissionFragment" />
+        <action
+            android:id="@+id/action_welcome_to_main"
+            app:destination="@id/mainCountdownFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/permissionFragment"
+        android:name="com.sixyears.onestory.ui.permission.PermissionFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_permission">
+        <action
+            android:id="@+id/action_permission_to_main"
+            app:destination="@id/mainCountdownFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainCountdownFragment"
+        android:name="com.sixyears.onestory.ui.main.MainCountdownFragment"
+        android:label="Our Story"
+        tools:layout="@layout/fragment_main_countdown">
+        <action
+            android:id="@+id/action_main_to_story"
+            app:destination="@id/ourStoryFragment" />
+        <action
+            android:id="@+id/action_main_to_reasons"
+            app:destination="@id/reasonsFragment" />
+        <action
+            android:id="@+id/action_main_to_letter"
+            app:destination="@id/loveLetterFragment" />
+        <action
+            android:id="@+id/action_main_to_gallery"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_main_to_birthday"
+            app:destination="@id/birthdayFragment" />
+        <action
+            android:id="@+id/action_main_to_final"
+            app:destination="@id/finalSurpriseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ourStoryFragment"
+        android:name="com.sixyears.onestory.ui.story.OurStoryFragment"
+        android:label="Our Story"
+        tools:layout="@layout/fragment_our_story" />
+
+    <fragment
+        android:id="@+id/reasonsFragment"
+        android:name="com.sixyears.onestory.ui.reasons.ReasonsFragment"
+        android:label="Reasons I Love You"
+        tools:layout="@layout/fragment_reasons" />
+
+    <fragment
+        android:id="@+id/loveLetterFragment"
+        android:name="com.sixyears.onestory.ui.letter.LoveLetterFragment"
+        android:label="Love Letter"
+        tools:layout="@layout/fragment_love_letter" />
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.sixyears.onestory.ui.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/birthdayFragment"
+        android:name="com.sixyears.onestory.ui.birthday.BirthdayFragment"
+        android:label="Happy Birthday"
+        tools:layout="@layout/fragment_birthday">
+        <action
+            android:id="@+id/action_birthday_to_final"
+            app:destination="@id/finalSurpriseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/finalSurpriseFragment"
+        android:name="com.sixyears.onestory.ui.finalsurprise.FinalSurpriseFragment"
+        android:label="Forever"
+        tools:layout="@layout/fragment_final_surprise" />
+
+</navigation>

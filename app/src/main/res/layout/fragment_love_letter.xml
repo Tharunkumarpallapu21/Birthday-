@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_soft_pink_gradient">
+
+    <!-- Envelope (shown first) -->
+    <LinearLayout
+        android:id="@+id/layout_envelope"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_envelope"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_envelope"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tap to open ❤️"
+            android:textAppearance="@style/TextAppearance.SixYears.Subtitle"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Letter paper (hidden initially) -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_letter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:fillViewport="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <TextView
+                    android:id="@+id/tv_letter_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/letter_title"
+                    android:textAppearance="@style/TextAppearance.SixYears.Title"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_letter_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="@style/TextAppearance.SixYears.Body"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_letter_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="end"
+                    android:text="@string/letter_signature"
+                    android:textAppearance="@style/TextAppearance.SixYears.Title"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

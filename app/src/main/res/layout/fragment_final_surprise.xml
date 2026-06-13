@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_soft_pink_gradient">
+
+    <com.sixyears.onestory.ui.widget.FloatingHeartsView
+        android:id="@+id/floating_hearts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/tv_final_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/final_title_1"
+            android:textAppearance="@style/TextAppearance.SixYears.Title"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_final_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/final_title_2"
+            android:textAppearance="@style/TextAppearance.SixYears.Title"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_final_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/final_title_3"
+            android:textAppearance="@style/TextAppearance.SixYears.Title"
+            android:textSize="26sp"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/tv_final_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/final_message"
+            android:textAppearance="@style/TextAppearance.SixYears.Subtitle"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

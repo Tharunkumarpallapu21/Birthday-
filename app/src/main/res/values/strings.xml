@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">6 Years, One Story ❤️</string>
+
+    <string name="splash_title">6 Years, One Story ❤️</string>
+    <string name="splash_subtitle">Every love story is beautiful. Ours is my favorite.</string>
+
+    <string name="welcome_line_1">Hi Love ❤️</string>
+    <string name="welcome_line_2">Before your birthday arrives, I wanted to give you something special.</string>
+    <string name="welcome_line_3">This app contains our memories, our journey, and all the reasons why I love you.</string>
+
+    <string name="notif_permission_text">❤️ To experience this surprise completely, notifications are required.</string>
+    <string name="allow_notifications">Allow Notifications</string>
+    <string name="notif_denied_title">Notifications Needed</string>
+    <string name="notif_denied_message">To receive your daily love messages and birthday countdown, please enable notifications from Settings.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="love_growing">Love Growing ❤️</string>
+    <string name="until_special_day">Until Your Special Day ✨</string>
+    <string name="card_our_story">❤️ Our Story</string>
+    <string name="card_reasons">❤️ Reasons I Love You</string>
+    <string name="card_love_letter">💌 Love Letter</string>
+    <string name="card_gallery">❤️ Gallery</string>
+
+    <string name="days_label">Days</string>
+    <string name="hours_label">Hours</string>
+    <string name="minutes_label">Minutes</string>
+    <string name="seconds_label">Seconds</string>
+
+    <string name="story_how_we_met">How We Met ❤️</string>
+    <string name="story_first_memories">First Memories ❤️</string>
+    <string name="story_difficult_times">Difficult Times ❤️</string>
+    <string name="story_stronger_together">Stronger Together ❤️</string>
+    <string name="story_growing_together">Growing Together ❤️</string>
+    <string name="story_six_years">Six Years One Story ❤️</string>
+
+    <string name="letter_title">Dear Love,</string>
+    <string name="letter_body">Thank you for being my happiness, my comfort, my best friend, and my favorite person.\n\nThese six years have been the most beautiful chapter of my life.\n\nI love you forever. ❤️</string>
+    <string name="letter_signature">Forever Yours ❤️</string>
+
+    <string name="gallery_empty_title">❤️ Memories Coming Soon ❤️</string>
+    <string name="gallery_empty_subtitle">Photos will be added later.</string>
+
+    <string name="birthday_title">Happy Birthday My Love ❤️</string>
+    <string name="birthday_message">Thank you for making my life beautiful.\n\nEvery moment with you is my favorite memory.\n\nToday is your day.\n\nI love you endlessly.</string>
+
+    <string name="final_title_1">6 Years.</string>
+    <string name="final_title_2">Countless Memories.</string>
+    <string name="final_title_3">Infinite Love ❤️</string>
+    <string name="final_message">Thank you for being my story ❤️</string>
+
+    <string name="notif_channel_general_name">Daily Love Messages</string>
+    <string name="notif_channel_general_desc">Daily good morning and countdown notifications</string>
+    <string name="notif_channel_birthday_name">Birthday Celebration</string>
+    <string name="notif_channel_birthday_desc">Special birthday day notifications</string>
+</resources>

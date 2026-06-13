@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF4D6D</color>
+    <color name="secondary">#FF758F</color>
+    <color name="background">#FFF5F7</color>
+    <color name="text_primary">#2D2D2D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="glass_white">#33FFFFFF</color>
+    <color name="glass_border">#55FFFFFF</color>
+    <color name="gradient_start">#FFC2D1</color>
+    <color name="gradient_end">#FF8FA3</color>
+    <color name="text_secondary">#6E6E6E</color>
+    <color name="card_shadow">#22FF4D6D</color>
+</resources>

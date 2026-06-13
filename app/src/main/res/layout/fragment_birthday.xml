@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <!-- Heart rain (behind confetti) -->
+    <com.sixyears.onestory.ui.widget.FloatingHeartsView
+        android:id="@+id/floating_hearts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Confetti on top -->
+    <com.sixyears.onestory.ui.widget.ConfettiView
+        android:id="@+id/confetti_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp">
+
+            <ImageView
+                android:id="@+id/iv_cake"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_cake"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_birthday_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/birthday_title"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_birthday_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.4"
+                android:text="@string/birthday_message"
+                android:textColor="@color/white"
+                android:alpha="0.95"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_continue"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Continue ❤️"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
